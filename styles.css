@@ -30,6 +30,11 @@ body {
     background-color: white;
 }
 
+.square,
+.user-square {
+    opacity: 1;
+}
+
 button.set-size {
     margin: 15px;
     padding: 10px 20px;

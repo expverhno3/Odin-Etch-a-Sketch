@@ -55,6 +55,10 @@ document.addEventListener("DOMContentLoaded", function() {
         if (e.target.classList.contains('square') || e.target.classList.contains("user-square")) {
             // e.target.style.backgroundColor = '#3498db'; // Change this color to whatever you want
             e.target.style.backgroundColor = getRandomRGBColor()
+
+            // note: how to get style value:
+            let opacity = window.getComputedStyle(e.target).getPropertyValue("opacity")
+            e.target.style.opacity = `${opacity - 0.1}`
         }
     });
     
