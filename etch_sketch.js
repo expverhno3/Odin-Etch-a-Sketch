@@ -14,6 +14,16 @@ function removeAllChildNodes(parent) {
     }
 }
 
+function getRandomRGBColor() {
+    // Generate random values for red, green, and blue components
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+    // Return the RGB color in the format 'rgb(r, g, b)'
+    return `rgb(${r}, ${g}, ${b})`;
+}
+
 function createGrid(size) {
     let totalNumber = size * size
     let squareHeight = 96 / size
@@ -43,7 +53,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     container.addEventListener('mouseover', function(e) {
         if (e.target.classList.contains('square') || e.target.classList.contains("user-square")) {
-            e.target.style.backgroundColor = '#3498db'; // Change this color to whatever you want
+            // e.target.style.backgroundColor = '#3498db'; // Change this color to whatever you want
+            e.target.style.backgroundColor = getRandomRGBColor()
         }
     });
     
