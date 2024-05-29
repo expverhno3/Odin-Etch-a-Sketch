@@ -24,7 +24,8 @@ function createGrid(size) {
         item.classList.add("user-square")
         item.style.width = `${squareHeight}vw`
         item.style.height = `${squareHeight}vw`
-        item.style.border = "1px solid #000"
+        item.style.border = "0.5px solid pink"
+        item.style.backgroundColor = "white"
         item.style.boxSizing = "border-box"
         container.appendChild(item)
     }

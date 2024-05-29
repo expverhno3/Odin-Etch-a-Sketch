@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: #000;
 }
 
 
@@ -16,6 +17,7 @@ body {
     width: 96vw; /* 16 * 16px */
     height: 96vw; /* 16 * 16px */
     padding: 2vw;
+    padding-top: 0;
     align-items: center;
     justify-content: center;
 }
@@ -23,12 +25,20 @@ body {
 .square {
     width: 6vw;
     height: 6vw;
-    border: 1px solid #000;
+    border: 0.5px solid pink;
     box-sizing: border-box;
+    background-color: white;
 }
 
-button.grid-size {
-    margin-bottom: 20px;
+button.set-size {
+    margin: 15px;
     padding: 10px 20px;
     font-size: 16px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, transform 0.3s;
 }
